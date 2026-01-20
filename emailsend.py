@@ -4,8 +4,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 # user credentials
-# SENDER_EMAIL = "thellakularaviteja@gmail.com"
-# PASSKEY = "vdgx upqz bpyk yvcp" # app passkey
+SENDER_EMAIL = "thellakularaviteja@gmail.com"
+PASSKEY = "vdgx upqz bpyk yvcp" # app passkey
 # smtp server
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
