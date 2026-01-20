@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{%block body%}
+    <div class="container">
+        <h2>Login</h2>
+        <p>{{msg}}</p>
+        <form method='POSt' action="{{ url_for('login')}}">
+            <label for="">Username :</label>
+            <input type="email" name="username" placeholder="Email" class="formdata">
+            <br>
+            <br>
+            <label for="">Password :</label>
+            <input type="password" name="password" class="formdata">
+            <br>
+            <br>
+            <button type="submit">submit</button>
+        </form>
+        <p>don't have account?</p>
+        <a href="{{ url_for('register') }}">Register</a>
+        <br>
+        <p>Don't know password</p>
+        <a href="{{ url_for('forgot_password') }}">Forgot Password?</a>
+    </div>
+{%endblock%}

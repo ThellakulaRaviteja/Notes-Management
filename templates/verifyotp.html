@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container">
+    <h2>Verify OTP</h2>
+    {{msg}}
+    <form method="POST" action="{{ url_for('verifyOTP')}}">
+        <label>OTP:</label>
+        <input type="text" name="otp" class="formdata">
+        <br>
+        <button type="submit">Verify</button>
+
+    </form>
+</div>
+{% endblock %}
